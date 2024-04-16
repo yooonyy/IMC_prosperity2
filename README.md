@@ -5,7 +5,6 @@
 - Official Hompage of IMC (https://prosperity.imc.com) <br>
 - Official Discord of IMC (https://discord.com/invite/KajAga3sFz) <br>
 - Official Notion of IMC (https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85) <br>
-- 2023 2nd Prize Code (https://github.com/ShubhamAnandJain/IMC-Prosperity-2023-Stanford-Cardinal/tree/main)
 
 
 #### Final Rank: ? th of n teams
@@ -17,9 +16,9 @@
 Yonsei Forum of Risk Management <br>
 Y-FoRM's algorithms in IMC Prosperity 2024!
 
-Ji Seob Lim (LinkedIn: https://www.linkedin.com/in/jimmylim0823) <br>
-Seong Yun Cho (LinkedIn: https://www.linkedin.com/in/성윤-조-6580bb292/) <br>
-Sang Hyeon Park (LinkedIn: https://www.linkedin.com/in/sang-hyeon-park-84612a271) <br>
+Ji Seob Lim  <br>
+Seong Yun Cho  <br>
+Sang Hyeon Park  <br>
 
 
 ---
