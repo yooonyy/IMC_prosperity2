@@ -105,11 +105,13 @@ Sang Hyeon Park  <br>
     - max storage 5000, storage fee 0.1 seashell / orchid timestamp <br>
 </details>
 
+- Sunlight and Humidity is useless.... In graph it looks like working as leading indicator, however not at all. <br>
+- so we gave up to use them and also other teams didnt use it. <br>
 
  <br> <br>
 
 ### Round 3: Basket Arbitrage Trading <br>
-- Buying Undervalued Places Comparing KOSPI 200 ETF NAV And Component (1CU) <br>
+- Buying Undervalued Places Comparing ETF NAV And Component (1CU) <br>
 
 <details>
  <summary> Official TV Broadcasting Summay </summary>
@@ -164,7 +166,7 @@ Sang Hyeon Park  <br>
 </details>
  <br> <br>
 
-### Round 4:  Call Option Trading (vega trading while hedging  <br>
+### Round 4:  Call Option Trading (vega trading while hedging delta)  <br>
 - "Theta": Sensitivity Over Time of Options. <br>
 - Round reflecting value over time. <br>
 
