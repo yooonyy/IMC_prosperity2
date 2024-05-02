@@ -51,6 +51,7 @@ Sang Hyeon Park  <br>
 
    STEP 3 <br>
    You will receive your results in the next game round. <br>
+  </details>
 
 <details>
   <summary> Description Summary </summary>
