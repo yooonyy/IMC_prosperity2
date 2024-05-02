@@ -27,7 +27,8 @@ Sang Hyeon Park  <br>
 ### Common Content for All Rounds <br>
 1. A kind of individual turn system. <br>
 2. Orders are cancelled at every point in time, so re-processed to next timestamp. <br>
-3. Based on AWS, so performance is limited. Need to simplify operations. <br>
+3. Based on AWS, so performance is limited. Need to simplify operations.(At most, linear regression) <br>
+4. If server goes down(It happens sometimes), they might give you additional 24hours for given round.
  <br> <br>
 
  
@@ -51,11 +52,23 @@ Sang Hyeon Park  <br>
    STEP 3 <br>
    You will receive your results in the next game round. <br>
 
- </details>
+<details>
+  <summary> Description Summary </summary>
+  **"Amethesis"** <br>
+
+  1. The fair value of it is very clear (10000) <br>
+  2. So it was easy to Market Making and Taking given its fair value <br>
+
+  **"Starfruit"** <br>
+
+  1. A price of it is not stationary, so we tried its fair value by using rolling linear regression.
+  2. Searched various periods and shifts by heatmap and multi plot.
+  3. 
+</details>
+ 
  <br> <br>
 
- 
-### Round 2: Pairs Trading <br>
+### Round 2: OTC Arbitrage Trading <br>
 - "Statistical Arbitrage": Arbitrage trading based on the process of returning to the law of "one's work. <br>
 - Not economical, But statistical. <br>
 - "Pairs trading": Two highly correlated stocks sold up (high valuation) and down (low valuation) after normalization. <br>
@@ -93,9 +106,8 @@ Sang Hyeon Park  <br>
 
  <br> <br>
 
-### Round 3: Time-dependent (based on theta-decay) <br>
-- "Theta": Sensitivity Over Time of Options. <br>
-- Round reflecting value over time. <br>
+### Round 3: Basket Arbitrage Trading <br>
+- Buying Undervalued Places Comparing KOSPI 200 ETF NAV And Component (1CU) <br>
 
 <details>
  <summary> Official TV Broadcasting Summay </summary>
@@ -150,12 +162,14 @@ Sang Hyeon Park  <br>
 </details>
  <br> <br>
 
-### Round 4: Index Basket Trading <br>
-- Buying Undervalued Places Comparing KOSPI 200 ETF NAV And Component (1CU) <br>
+### Round 4:  Call Option Trading (vega trading while hedging  <br>
+- "Theta": Sensitivity Over Time of Options. <br>
+- Round reflecting value over time. <br>
+
 
  <br> <br>
 
-### Round 5: Payment For Oder Flow <br>
+### Round 5: Multi-agent  <br>
 - In this round, the information and characteristics of the orderer are provided (i.e. multi-agent round) <br>
 - At this time, the use of the concept of "Market Microstructure". <br>
  - Traditional economic theory that prices are continuous and found? Wrong <br>
@@ -383,7 +397,7 @@ Sang Hyeon Park  <br>
 * 0.3.1    
   2024-04-14 (Round 3 begins)    
 * 0.3.2  
-  2024-04-16 (시험 기간 jonna pigon damn)  
+  2024-04-16 (시험 기간 )  
  
 ---
 ## License
