@@ -54,7 +54,8 @@ Sang Hyeon Park  <br>
 
 <details>
   <summary> Description Summary </summary>
-  **"Amethesis"** <br>
+ 
+  **Amethesis"** <br>
 
   1. The fair value of it is very clear (10000) <br>
   2. So it was easy to Market Making and Taking given its fair value <br>
@@ -64,7 +65,7 @@ Sang Hyeon Park  <br>
   1. A price of it is not stationary, so we tried its fair value by using rolling linear regression.
   2. Searched various periods and shifts by heatmap and multi plot.
   3. 
-</details>
+ </details>
  
  <br> <br>
 
