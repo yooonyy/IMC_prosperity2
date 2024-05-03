@@ -4,6 +4,7 @@
 - Official Homepage of IMC: [https://prosperity.imc.com](https://prosperity.imc.com)
 - Official Discord of IMC: [https://discord.com/invite/KajAga3sFz](https://discord.com/invite/KajAga3sFz)
 - Official Notion of IMC: [https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85](https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85)
+- special thanks to jmerle : visualizer for results of submissions and local backtests (available online at [jmerle.github.io/imc-prosperity-2-visualizer/](https://jmerle.github.io/imc-prosperity-2-visualizer/)).
 
 #### Final Rank: 189th overall (top 2%), 5th in Korea.
 
