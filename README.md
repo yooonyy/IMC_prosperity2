@@ -81,16 +81,37 @@ This round was particularly engaging as it mirrored real-world trading scenarios
 Manual trading was about game theory.
 
 ### Round 4:  Call Option Trading (hedging delta and exposing to vega) <br>
-4라운드는 COCONUT, COCONUT_COUPON으로 위장한 call option trading 라운드 였습니다.
 
+Round 4 was domain of call option trading, leveraging financial instruments disguised as "COCONUT" and "COCONUT_COUPON." Our strategy pivoted around a detailed application of the Black-Scholes-Merton model and focused on managing the option's Greeks, particularly delta and vega.
 
-
+Delta Neutral Strategy: Aimed to maintain a delta-neutral position to hedge against price movements in the underlying asset, thereby primarily exposing our position to changes in volatility (vega).
+Implied Volatility Tracking: Used a rolling z-score of implied volatility (IV) to gauge the overbought or oversold states of the options. This metric helped identify mean-reversion opportunities in the options market.
+Mean-Reversion Based on IV: If the IV z-score crossed predefined thresholds, we implemented a pyramid-style trading strategy to exploit these IV extremes.
+Dynamic Delta Hedging: Adjusted our positions in real-time to neutralize the delta, ensuring that our exposure to price movements was minimized while maintaining our positions to benefit from spikes in volatility.
+Technical Implementation
+Calculating Implied Volatility: We computed the IV using the BSM formula adapted for zero interest rates. This computation took into account the current market prices of the underlying asset and the option itself.
+Z-Score for IV: A rolling calculation of the z-score for IV was implemented to dynamically assess the trading environment and adjust strategies accordingly.
+Order Management: Orders were dynamically managed based on the IV's z-score and delta adjustments, allowing us to react promptly to market conditions.
+Logging and Adjustments: Throughout the trading period, adjustments were logged meticulously to ensure transparency and enable post-analysis of the strategy's effectiveness.
+Challenges and Adjustments
+Market Sensitivity: The strategy required constant adjustment to the sensitivity parameters for the IV z-score to optimize the trading responses.
+Technical Implementations: Due to the complexity of the calculations, particularly those involving the BSM derivatives and the dynamic hedging components, significant effort was put into ensuring that the computational overhead did not hinder real-time trading responses.
 
 ### Round 5: Multi-agent  <br>
 - In this round, the information and characteristics of the orderer are provided (i.e. multi-agent round) <br>
 - At this time, the use of the concept of "Market Microstructure". <br>
- - Traditional economic theory that prices are continuous and found? Wrong <br>
- - Prices are discontinuous and formed by market participants <br>
+- Traditional economic theory that prices are continuous and found? Wrong <br>
+- Prices are discontinuous and formed by market participants <br>
 
- <br>
+Due to delay of competition, All of us were so busy with our mid-term that we couldn't participate in round 5.
+So we just modified some codes in previous round and submitted.
+
+---
+## In Closing
+- Among many algorithmic trading competitions, IMC Prosperity stands out due to its engaging storyline and well-designed graphics. Despite its challenges, it was an enjoyable experience throughout.
+- The unexpected server downtime extended the competition by 24 hours, causing inconvenience and disrupting schedules for many participants. Nevertheless, I would like to express my gratitude to IMC for hosting such a fascinating event.
+- I am deeply thankful to Jiseop for introducing me to this competition and encouraging participation. His initiative allowed us to explore market microstructures, CLOB, object-oriented programming, and algorithmic trading strategies extensively.
+- My heartfelt thanks also go to Sanghyun, who did not give up despite the difficulties and took charge of manual trading and documenting our meetings, contributing significantly until the end.
+- Despite overlapping with exam periods, the fact that we could conduct our Zoom meetings daily past midnight for over two hours without any complaints speaks volumes about the good team spirit and the enjoyable nature of the competition.
+- If Prosperity3 is held, I definitely plan to participate again and hope that more people in Korea will also take interest and join the competition.
 
