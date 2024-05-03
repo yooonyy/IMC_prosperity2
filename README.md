@@ -2,45 +2,41 @@
 # IMC-Prosperity-2024, Y-FoRM
 
 ## Major Reference Links
-- Official Hompage of IMC (https://prosperity.imc.com) <br>
-- Official Discord of IMC (https://discord.com/invite/KajAga3sFz) <br>
-- Official Notion of IMC (https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85) <br>
+- Official Homepage of IMC: [https://prosperity.imc.com](https://prosperity.imc.com)
+- Official Discord of IMC: [https://discord.com/invite/KajAga3sFz](https://discord.com/invite/KajAga3sFz)
+- Official Notion of IMC: [https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85](https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85)
 
+#### Final Rank: 189th overall (top 2%), 5th in Korea.
 
-#### Final Rank: 189th overall(top 2%), 5th in the Korea. <br>
+### Round Results
 
-### Round Results <br>
+| Rank   | Overall | Manual | Algorithmic | Country |
+|--------|---------|--------|-------------|---------|
+| Round 1| 1913    | 2263   | 674         | 12      |
+| Round 2| 290     | 1397   | 292         | 6       |
+| Round 3| 279     | 971    | 280         | 6       |
+| Round 4| 212     | 794    | 199         | 5       |
+| Round 5| 189     | 576    | 177         | 5       |
 
-|Rank   |Overall|Manual|Algorithmic|Country|
-|-------|-------|------|-----------|-------|
-|Round 1|1913   |2263  |674        |12     |
-|Round 2|290    |1397  |292        |6      |
-|Round 3|279    |971   |280        |6      |
-|Round 4|212    |794   |199        |5      |
-|Round 5|189    |576   |177        |5      |
-<br>
-
-|PnL    |Manual|Algorithmic|Overall|Cumulative|
-|-------|-------|-------|-------|---------|
-|Round 1|68,531 |22,124 |90,655 |90,655   |
-|Round 2|113,938|219,146|333,085|423,740  |
-|Round 3|75,107 |49,707 |124,814|548,555  |
-|Round 4|52,212 |282,865|335,077|883,632  |
-|Round 5|69,785 |108,109|177,895|1,061,527|
-<br>  
+| PnL    | Manual | Algorithmic | Overall | Cumulative |
+|--------|--------|-------------|---------|------------|
+| Round 1| 68,531 | 22,124      | 90,655  | 90,655     |
+| Round 2| 113,938| 219,146     | 333,085 | 423,740    |
+| Round 3| 75,107 | 49,707      | 124,814 | 548,555    |
+| Round 4| 52,212 | 282,865     | 335,077 | 883,632    |
+| Round 5| 69,785 | 108,109     | 177,895 | 1,061,527  |
 
 ---
-## Team < Y-FoRM >
+## Team Y-FoRM
 
-Yonsei Forum of Risk Management <br>
-Y-FoRM's algorithms in IMC Prosperity 2024!
+Yonsei Forum of Risk Management (Y-FoRM) algorithms in IMC Prosperity 2024!
 
-Ji Seob Lim  <br>
-Seong Yun Cho  <br>
-Sang Hyeon Park  <br>
-
+- Ji Seob Lim
+- Seong Yun Cho
+- Sang Hyeon Park
 
 ---
+
 ## Round Details
 
 ### Common Content for All Rounds <br>
