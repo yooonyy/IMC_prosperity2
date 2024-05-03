@@ -1,4 +1,3 @@
----
 # IMC-Prosperity-2024, Y-FoRM
 
 ## Major Reference Links
