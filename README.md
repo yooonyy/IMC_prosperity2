@@ -7,9 +7,27 @@
 - Official Notion of IMC (https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85) <br>
 
 
-#### Final Rank: ? th of n teams
+#### Final Rank: 189th overall(top 2%), 5th in the Korea.
 
+### Round Results
 
+|Rank   |Overall|Manual|Algorithmic|Country|
+|-------|-------|------|-----------|-------|
+|Round 1|1913   |2263  |674        |12     |
+|Round 2|290    |1397  |292        |6      |
+|Round 3|279    |971   |280        |6      |
+|Round 4|212    |794   |199        |5      |
+|Round 5|189    |576   |177        |5      |
+<br>
+
+|PnL    |Manual|Algorithmic|Overall|Cumulative|
+|-------|-------|-------|-------|---------|
+|Round 1|68,531 |22,124 |90,655 |90,655   |
+|Round 2|113,938|219,146|333,085|423,740  |
+|Round 3|75,107 |49,707 |124,814|548,555  |
+|Round 4|52,212 |282,865|335,077|883,632  |
+|Round 5|69,785 |108,109|177,895|1,061,527|
+<br>  
 ---
 ## Team < Y-FoRM >
 
