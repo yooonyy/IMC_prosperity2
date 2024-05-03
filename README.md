@@ -42,11 +42,10 @@ Yonsei Forum of Risk Management (Y-FoRM) algorithms in IMC Prosperity 2024!
 2. Orders are cancelled at every point in time, so re-processed to next timestamp. <br>
 3. Based on AWS, so performance is limited. Need to simplify operations.(At most, linear regression) <br>
 4. If server goes down(It happens sometimes), they might give you additional 24hours for given round.
- <br> <br>
 
 ### Tutorial Round
 We spend most of our time in tutorial, understanding how the competition was going and how the algorithm worked.
-Main concept of this round was Market Making and Market Taking.
+At the end, we made our mind to deal with this round with Market Making and Market Taking by considering limit position.
 There were two products that we was going to trade.
 
  **Amethesis"** <br>
@@ -58,63 +57,16 @@ There were two products that we was going to trade.
  2. Searched various periods to predict its fair value by heatmap and multi plot.
 
 ### Round 1: Market Making(MM) <br>
-- Market Creation (Contract with Exchange) <—> LP Liquidity Supply (Individual Products, Contract with Issuer) <br>
-- Market Making ~ Designated Quote Offer <br>
-- Market Taking ~ Market Street <br>
-
-
- **Amethesis"** <br>
-
- 1. The fair value of amethesis was very clear (10000) <br>
- 2. So it was easy to Market Making and Taking given its fair value <br>
-
- **"Starfruit"** <br>
-
- 1. A price of it was not stationary, so we tried its fair value by using rolling linear regression.
- 2. Searched various periods and shifts by heatmap and multi plot.
-
-
- <br> <br>
+The algo side of round 1 appeared to be a continuation of the tutorial round on new data.
+So we re-checked our algorithms logics and focused on reconstructing the code in a more object-oriented way. 
 
 ### Round 2: OTC Arbitrage Trading <br>
-- "Statistical Arbitrage": Arbitrage trading based on the process of returning to the law of "one's work. <br>
-- Not economical, But statistical. <br>
-- "Pairs trading": Two highly correlated stocks sold up (high valuation) and down (low valuation) after normalization. <br>
-- At this time, covariance is also used to normalize. <br>
+It was the most incomprehensible round.
+The featured product was 'Orchid', which, according to official documentation, is sensitive to variations in sunlight and humidity.
+However, the provided data was insufficient as it did not fully align with the descriptions in the document, making it challenging to use climate data as a leading or explanatory indicator for pricing. During the competition, there was significant debate on Discord among participants regarding the utility of climate data in our trading strategies. Ultimately, it was concluded that climate data was unsuitable for strategic purposes in this context. Initially, we attempted a preemptive pricing strategy based on climate data, but this approach was rejected.
 
-<details>
-  <summary> Description Summary </summary>
-  **"Orchid"** <br>
- 
-  1. 내가 위치한 아키펠라고(군도)의 거래소(시장)에서 사는 방법 <br>
- 
-  2. 남쪽의 오리들이랑 거래 (conversion): 수출입   <br>
-   - 살때: 오리가 제시한 매도호가 + 수송비용 + 수입관세   <br>
-   - 팔때: 오리가 제시한 매수호가 + 수송비용 + 수출관세   <br>
-  오키드를 가지고 있으면 보관비용 발생 (상수 = 0.1)(cost of carry) - OTC Forward와 유사   <br>
-  오키드의 가격 결정 요인: 수송비용, 수출입관세, 보관비용, 습도, 일조량에 영향 - 영상에서 benchmark   <br>
- 
-  3. Sunlight   <br>
-   - f sunlight < 7 hours a day:   <br>
-     production decrease 4% for every 10 minute   <br>
-      → 일간 일조량: 7시간 이상: a원   <br>
-      → 6시간 50분: 0.96a   <br>
-      → 6시간: (-1시간 = -6*10분) = (1-0.04 * 6) * a = (1 - 0.24)a = 0.76a   <br>
-
-   4. Humidity   <br>
-    - if ideal humidity not in 60~80%:   <br>
-     production decrease 2% for every 5%p of humidity change   <br>
-      → 습도 60 ~ 80 % 적정: a원   <br>
-      → 2% 감소 / 5%p 변화   <br>
-
-   5. Storage <br>
-    - max storage 5000, storage fee 0.1 seashell / orchid timestamp <br>
-</details>
-
-- Sunlight and Humidity is useless.... In graph it looks like working as leading indicator, however not at all. <br>
-- so we gave up to use them and also other teams didnt use it. <br>
-
- <br> <br>
+Instead, the main strategy shifted to focus on arbitrage in the over-the-counter (OTC) market. Unlike Round 1, Round 2 allowed for OTC trades, which introduced more dynamic strategic options due to unexpectedly favorable conditions, such as lower than anticipated import tariffs and subsidies that reduced the impact of export tariffs.
+The allowance for OTC trading meant that positions could be cleared more rapidly than in the previous round, making our approach more flexible and responsive. This strategic shift helped us to capitalize on market inefficiencies more effectively and adapt our tactics to the evolving trading environment.
 
 ### Round 3: Basket Arbitrage Trading <br>
 - Buying Undervalued Places Comparing ETF NAV And Component (1CU) <br>
