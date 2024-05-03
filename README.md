@@ -2,7 +2,6 @@
 
 ## Major Reference Links
 - Official Homepage of IMC: [https://prosperity.imc.com](https://prosperity.imc.com)
-- Official Discord of IMC: [https://discord.com/invite/KajAga3sFz](https://discord.com/invite/KajAga3sFz)
 - Official Notion of IMC: [https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85](https://imc-prosperity.notion.site/Prosperity-2-Wiki-fe650c0292ae4cdb94714a3f5aa74c85)
 - special thanks to jmerle : visualizer for results of submissions and local backtests (available online at [jmerle.github.io/imc-prosperity-2-visualizer/](https://jmerle.github.io/imc-prosperity-2-visualizer/)).
 
@@ -36,7 +35,7 @@ Yonsei Forum of Risk Management (Y-FoRM) algorithms in IMC Prosperity 2024!
 - Sang Hyeon Park
 
 ---
-## Round Details
+## Round Summaries
 
 ### Common Content for All Rounds <br>
 1. A kind of individual turn system. <br>
@@ -45,43 +44,36 @@ Yonsei Forum of Risk Management (Y-FoRM) algorithms in IMC Prosperity 2024!
 4. If server goes down(It happens sometimes), they might give you additional 24hours for given round.
  <br> <br>
 
- 
+### Tutorial Round
+We spend most of our time in tutorial, understanding how the competition was going and how the algorithm worked.
+Main concept of this round was Market Making and Market Taking.
+There were two products that we was going to trade.
+
+ **Amethesis"** <br>
+ 1. The fair value of amethesis was very clear (10000) <br>
+ 2. So it was easier than starfruit to Market Making and Taking given its fair value <br>
+
+ **"Starfruit"** <br>
+ 1. A price of it was not stationary, so we tried its fair value by using rolling linear regression.
+ 2. Searched various periods to predict its fair value by heatmap and multi plot.
+
 ### Round 1: Market Making(MM) <br>
 - Market Creation (Contract with Exchange) <—> LP Liquidity Supply (Individual Products, Contract with Issuer) <br>
 - Market Making ~ Designated Quote Offer <br>
 - Market Taking ~ Market Street <br>
 
- <details>
-  <summary> Official Description for Round 1 </summary>  <br>
- 
-   Version history <br>
-   Your uploaded algorithms are evaluated against historic data. Results in the log output are not indicative of performance in the next round. <br>
 
-   STEP 1 <br>
-   Use the Wiki and all other information you can find to write your algorithm. <br>
+ **Amethesis"** <br>
 
-   STEP 2 <br>
-   Upload your algorithm here (you can re-upload another algorithm as often as you like. The newest accepted file will overwrite the previous one.) <br>
+ 1. The fair value of amethesis was very clear (10000) <br>
+ 2. So it was easy to Market Making and Taking given its fair value <br>
 
-   STEP 3 <br>
-   You will receive your results in the next game round. <br>
-  </details>
+ **"Starfruit"** <br>
 
-<details>
-  <summary> Description Summary </summary>
- 
-  **Amethesis"** <br>
+ 1. A price of it was not stationary, so we tried its fair value by using rolling linear regression.
+ 2. Searched various periods and shifts by heatmap and multi plot.
 
-  1. The fair value of it is very clear (10000) <br>
-  2. So it was easy to Market Making and Taking given its fair value <br>
 
-  **"Starfruit"** <br>
-
-  1. A price of it is not stationary, so we tried its fair value by using rolling linear regression.
-  2. Searched various periods and shifts by heatmap and multi plot.
-  3. 
- </details>
- 
  <br> <br>
 
 ### Round 2: OTC Arbitrage Trading <br>
@@ -195,229 +187,3 @@ Yonsei Forum of Risk Management (Y-FoRM) algorithms in IMC Prosperity 2024!
 
  <br>
 
----
-## Proceedings
-
-### 04/05 00:00 Meeting
-
-<details>
- 
- <summary> Due 04/07 </summary>   
-  1. Basic Market making Logic Thinking <br>
-  2. Inventory Management Sys needs to be managed well (but how?) <br>
-  3. Signal Section & Intergrating (Maybe due to the release of the 2nd place code, this is the part that distinguishes the top ranks in this competition) <br>
- 
-</details>
-  
-### 04/07 00:00 Meeting
-<details>
-  <summary> Due 04/08 </summary>  
-
-   1. Starfruits Rolling Regression(SY)
-   
-   2. Markdown(SH)
-    
-   3. AM 어디까지 undercut할지(JS)
-      
-   4. AM parameter tuning(optimization ASAP)(SH) <br>
-      a. cf. tutorial.py <br>
-      b. dec.var: SL_INVENTORY, SL_SPREAD, MM_SPREAD <br>
-      c. obj: max P/L <br>
-      d. constaints: <br>
-          (1) 0 ≤ SL_INVENTORY ≤ 20 <br>
-          (2) 0 ≤ SL_SPREAD ≤ MM_SPREAD ≤ 4 <br>
-          (3) SL_INVENTORY, SL_SPREAD, MM_SPREAD integer <br>
-            ⇒ 하나씩 늘리지 말고 (상중하, 상 중상 중 중하 하) 적당히 구간 나눠서 대충 파악하기 naive하게..
-    
-   5. AM  안움직이는 구간 해결해야함. 분석하기 (552, 710, 1020..) (SH) <br>
-      a. log 파일 가져와서 시각화해서 뭐가 문제였을까 분석 “position_no_change.log” 참고 <br>  
-          ⇒ 포지션 상태(중립, 수량적은지 많은지), 호가 뎁스, 전후 거래량 많은지 적은지 <br>
-          ⇒ 예측 가능한지, 얼마나 빨리 식별 가능한지, 어떻게 대응할지.. 강제로 턴다든가 등등.. 묶여있는 상태일 수도 있으니까 어떻게 해결해야 하는 건지를 분석 <br>
-          ⇒ 우리 position의 resting time(time to change in p/l)이 얼마나 되는지. 멈춰있는 구간의 길이를 따져보고 우리가 얼마나 안 움직이고 있으면 비정상인건지 ( = 얼마 안에 털어야 정상인지!) <br>
-        
-   6. Starfruits base model coding(SY) <br>
-      a. 복붙(변수명만 다 고치기) <br>
-      b. 데이터 저장 (queue로!) <br>
-      c. window 전까지 임시 회피코드 (fix value) <br>
-      d. fair value를 rolling regression y predict로 대체 <br>
-      e. window 전까지 임시 회피 개선 <br>
-
-   7. visualizer logger(SH) - optional
-
-</details>
-
-<details>
- 
-  <summary> Due 04/09 </summary>  
-  1. Inventory Model Implementing: fair value, mm_spread, order_quantity <br>
-    a. inventory positive → fair value 높여야함, inventory negative → fair value 낮춰야함 <br>
-  
-</details>
-
- <br> <br>
- 
-### 04/08 00:00 Meeting
-
-
-<details>
- 
-  <summary> Due 04/09 II </summary>  
-  
-   1. stop loss order 0개 해결 (JS)   <br>
-   2. starfruit deque로 담기 (SY)   <br>
-   3. 전반적 inv 관리   <br>
-   4. 최후 청산   <br> 
-   5. 가격리스트 → (ARIMA 참고해서) TR, DI 코딩 (SH)   <br>
-   6. csv mid_price 롤링윈도우 20으로 해서 TR(n) DI(n) 가격 범위 찾기 (SH) (cf.https://www.grahamcapital.com/blog/the-trendiness-of-markets/)   <br>
-   +. Trader class 안에 (INSTANCE VARIABLE로 담아보기 + DICT  형식으로)   <br>
-       - class trader 바로 밑에 생기기   <br>
-       - data = {’STARFRUITS’:{’PRICE’:deque()}}   <br>
-       - 일단 가격이 담기는지 확인해보고 담기면 predict 추가 <br>
-  
-</details>
- 
- <br> <br>
-
-### 04/09 - 04/10 all night
-
-<details>
-  <summary> todo list </summary>  
- 
-   1. inv 관리   <br>
-   2. 최후 청산   <br>
-   3. 선형회귀 반영 및 고도화 (cf. Graham Capital Management)     <br>
-</details>
-
- <br> <br>
-
-### 04/11 00:00 Meeting
-
-<details>
-  <summary> Due 04/11 </summary>  
- 
-   1. Scratch best but also worst bid   <br>
-   2. floor ceil → market make fair value   <br>
-   3. scratch level vs SL level → market take   <br>
-   4. scratch를 포지션 방향과 무관하게 할까? (caution: stop loss와의 중복 주문) ⇒ 만약 잘되면 AM에도 적용   <br>
-   5. parameter tuning   <br>
-   6. 파일 일괄화 → 최종 파일 github에   <br>
-   7. Manual Trading (SH) <br>
-</details>
-
- <br> <br>
-
-### 04/12 00:00 Meeting
-
-<details>
-  <summary> Due 04/12 </summary>  
- 
-   <details>
-    <summary> [Pricing] </summary>     <br>
-     1. sunlight unit(단위) 확인 (0.1 minute이 맞는지) (SH)   <br>
-     2. storage data 어디서 얻을 수 있는지 (SH)   <br>
-     3. sunilght, humidity: feature engineering: 그냥 회귀 때리지 말고 어떤 함수를 씌운 다음에 회귀 돌려야함 (SY)   <br>
-       - 0 = f(sunlight, humidity,  storage) → 이거에 대한 pricing funtion을 만들어야..    <br>
-     4. 안정적으로 계수 추정하는 multivariable linear regress (on the fly(데이터가 하나씩 추가되면서 n번째에는 n개 데이터로 하는 거) / rolling 불가!) ← QR decomposition / inverse matrix (SY)   <br>
-     5. hard coding VS rolling(numpy를 사용하자..) (SY)   <br>  
-     6. regress를 통해 뭘 찾을지 (price / diff / return 중에서..) (JS)   <br>
-     7. cost of carry 반영 어떻게 할 건지 (JS)   <br>
-   </details>
-
-   <details>
-    <summary> [Trading] </summary> <br>
-     8. 기회 식별 어떻게 할 건지 (very good fair value가 필요함)   <br>
-     9. 위험 관리 어떻게 할지   <br>
-     10. 거래소 내에서는 make? take? where? (spread가 굉장히 크기 때문에..)   <br>
-   </details>
-   
-   <details>
-    <summary> [Manual Trading] </summary>   <br>
-    - brute force   <br>
-    - dijkstra algorithm(멋있게 풀고 싶다면) (cf. https://reasonabledeviations.com/2019/03/02/currency-arbitrage-graphs/)   <br>
-   </details> 
-</details>
- 
- 
- <br> <br>
-
- 
-### 04/13 00:00 Meeting
-
-<details>
-  <summary> Due 04/13 </summary>  
-   1. day 0에 overfitting해서 pricing function (SY)   <br>
-   2. fair value VS OTC VS exchange → arb (JS)     <br>
-   3. OOP 구조 개선 (JS)   <br> 
-   4. manual trading (SH)   <br>
-   5. traderData (SH)   <br>
-    - STARFRUIT 가격 data->손실 <br>  
-    - traderData로 복원   <br>
-    - data->toJSON->traderData 보내기->if 데이터 손실->traderData 받아오기->data 복원   <br>
-</details>
-
- <br> <br>
- 
-### 04/14 00:00 Meeting
-
-<details>
-  <summary> Due 04/14 </summary>  <br> 
-  1. heuristic pricing for shift (좋좋 좋안 안좋 안안) (SY)
-  2. traderData (JS) <br>
-  3. 코드 소화 및 도큐먼테이션 (SH) <br>
-</details>
-
- <br> <br>
-
-### 04/15 00:00 Meeting
- 
-<details>
-  <summary> Due 04/15 </summary>   <br>
-  1. 코드 베이스 만들기: OTC ARB 재탕 -> JS   <br>
-  2. eda 리서치: mid_vwap 기준 평균 및 표준편차 계산, 진입시그널 k에따라서 빈도 히스토그램, drawdown period 분포 -> 곱하면 기대값 → SY   <br>
-  3. 매뉴얼챌린지, 라운드2 패러미터 튜닝 -> SH   <br>
-   - 매뉴얼 챌린지: 다른 참여자 없다하고 최적화 -> 그 결과를 모든 참여자가 따른다하고 최적화 -> 2~3회 반복   <br>
-   - 라운드2: min_edge, mm_edge 튜닝 (라운드2 백테 50k 이상 나오는 조합들만), mm_edge 먼저 최적화 후 min_edge    <br>
-</details>
-
-<br> <br>
-
-
-
-
----
-## Results
-
-### Round 1
-{
-"Round_1": {
-            "Overall_Rank": 1913, "Manual_Rank": 2263, "Algorithmic_Rank": 674, "Country_Rank": 12,
-            "Manual_PL": 68.531, "Algorithmic_PL": 22.124, "Overall_PL": 90.655, "Cumulative_PL": 90.655
-            }, 
-
-
-### Round 2
-
-
-
----
-## Version History
-
-* 0.1.1  
-  2024-04-08 (Initial Release / Round 1 begins)  
-* 0.1.2  
-  2024-04-09  
-* 0.1.3  
-  2024-04-10  
-* 0.2.1  
-  2024-04-11 (Round 2 begins)
-* 0.2.2  
-  2024-04-13  
-* 0.3.1    
-  2024-04-14 (Round 3 begins)    
-* 0.3.2  
-  2024-04-16 (시험 기간 )  
- 
----
-## License
-
-This project is licensed under the [MIT] License - see the LICENSE.md file for details
