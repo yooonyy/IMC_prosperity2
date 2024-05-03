@@ -36,7 +36,6 @@ Yonsei Forum of Risk Management (Y-FoRM) algorithms in IMC Prosperity 2024!
 - Sang Hyeon Park
 
 ---
-
 ## Round Details
 
 ### Common Content for All Rounds <br>
