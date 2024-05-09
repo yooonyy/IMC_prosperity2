@@ -103,7 +103,7 @@
 **메뉴얼 트레이딩 문제**  
 1라운드는 확률 분포와 최적화에 관한 것이었으며, 저희는 문제를 잘못 이해하여 답을 크게 놓쳤습니다. 저희는 이익을 극대화하기 위해 입찰해야 했으며, 입찰 가격은 판매자의 판매 의사 가격(저희의 입찰에 대한 판매 의사)의 확률 분포에 따라 결정되었습니다. 수동 트레이딩의 잠재적인 수익은 알고리즘 트레이딩보다 훨씬 컸기 때문에, 저희는 느린 출발과 긴 상승을 겪었습니다.
 
-<div align=center><img src = "https://raw.githubusercontent.com/jimmylim0823/IMC-Prosperity-2/master/img/R1_PnL.png?raw=True" width="50%" height="50%"> </div>
+<div align=center><img src = "https://raw.githubusercontent.com/yooonyy/IMC_prosperity2/master/img/R1_PnL.png?raw=True" width="50%" height="50%"> </div>
 
 ### 라운드 2: OTC 트레이딩(거래소-OTC 차익거래)
 
@@ -117,7 +117,7 @@
 **메뉴얼 트레이딩 문제**  
 2라운드는 전환율 행렬이 주어진 삼각 차익 거래에 관한 것이었습니다. 저희는 행렬 크기가 작기 때문에 무차별 대입 알고리즘을 사용했습니다.
 
-<div align=center><img src = "https://raw.githubusercontent.com/jimmylim0823/IMC-Prosperity-2/master/img/R2_PnL.png?raw=True" width="50%" height="50%"></div>
+<div align=center><img src = "https://raw.githubusercontent.com/yooonyy/IMC_prosperity2/master/img/R2_PnL.png?raw=True" width="50%" height="50%"></div>
 
 ### 라운드 3: 바스켓 트레이딩 (NAV 트레이딩)
 - `GIFT_BASKET`은 다음과 같은 구성품의 조합의 지수와 동등하게 여겨집니다: 4 `CHOCOLATE`, 6 `STRAWBERRIES`, 그리고 1 `ROSES` .
@@ -136,7 +136,7 @@
 **메뉴얼 트레이딩 문제**  
 3라운드는 게임 이론에 관한 것이었으며, 우리는 지도에서 몇 개의 그리드를 선택하여 보물을 찾아야 했습니다. 모험은 최대 3회까지 가능했으며, 비용이 크게 증가합니다. 우리는 참가자들과 함께 찾은 보물을 공유해야 했기 때문에, 가장 매력적인 옵션에 대한 경쟁을 피하려고 노력했습니다. 우리는 최고가 아닌 좋은 옵션 하나와 그럭저럭인 두 옵션을 선택했습니다.
 
-<div align=center><img src = "https://raw.githubusercontent.com/jimmylim0823/IMC-Prosperity-2/master/img/R3_PnL.png?raw=True" width="50%" height="50%"> </div>
+<div align=center><img src = "https://raw.githubusercontent.com/yooonyy/IMC_prosperity2/master/img/R3_PnL.png?raw=True" width="50%" height="50%"> </div>
 
 ### 라운드 4: 옵션 트레이딩 (베가 트레이딩)
 - `COCONUT`는 기초 자산이며, `COCONUT_COUPON`은 행사가격이 10,000이고 만기까지 250일(라운드)인 유럽형 콜 옵션입니다.
@@ -151,7 +151,7 @@
 **메뉴얼 트레이딩 문제**  
 4라운드는 1라운드와 비슷했지만 게임 이론이 추가되었습니다. 모든 참가자의 평균 입찰가에 의해 결정되는 구매 의사의 확률 분포가 있었습니다. 저희는 보수적인 접근을 선택하고 최선의 답에서 너무 멀어지지 않았습니다.
 
-<div align=center><img src = "https://raw.githubusercontent.com/jimmylim0823/IMC-Prosperity-2/master/img/R4_PnL.png?raw=True" width="50%" height="50%"> </div>
+<div align=center><img src = "https://raw.githubusercontent.com/yooonyy/IMC_prosperity2/master/img/R4_PnL.png?raw=True" width="50%" height="50%"> </div>
 
 ### 라운드 5: 비익명화된 거래 데이터
 - 5라운드에서는 새로운 제품이 소개되지 않았지만, 시장 거래와 개인 거래 모두에서 거래자(매수자 및 매도자)의 이름이 표시되었습니다.
@@ -167,9 +167,9 @@
 - 거래자 기반 신호는 `AMETHYSTS`와 `STARFRUIT`에만 적용되었지만, 추가 이익은 미미했습니다.
 
 **메뉴얼 트레이딩 문제**  
-5라운드는 뉴스 트레이딩에 관한 것이었습니다. 북부 군도에서 가장 신뢰할 수 있는 뉴스 소스 "Iceberg"(Bloomberg가 아님)를 기반으로, 저희는 총 포지션 한도 100%로 매수와 매도 포지션을 배분해야 했습니다. 저희는 모든 제품에 대해 포지션을 취함으로써 몇몇 잘못된 답변의 영향을 줄이려고 했습니다. 저희는 5개의 정답과 4개의 오답을 얻었지만, 올바른 답변 하나의 이익이 잘못된 답변들의 손실을 모두 상쇄할 수 있었습니다.
+5라운드는 뉴스 트레이딩에 관한 것이었습니다. 북부 군도에서 가장 신뢰할 수 있는 뉴스 소스 "Iceberg"(Bloomberg 아님)를 기반으로, 저희는 총 포지션 한도 100%로 매수와 매도 포지션을 배분해야 했습니다. 저희는 모든 제품에 대해 포지션을 취함으로써 몇몇 잘못된 답변의 영향을 줄이려고 했습니다. 저희는 5개의 정답과 4개의 오답을 얻었지만, 올바른 답변 하나의 이익이 잘못된 답변들의 손실을 모두 상쇄할 수 있었습니다.
 
-<div align=center><img src = "https://raw.githubusercontent.com/jimmylim0823/IMC-Prosperity-2/master/img/R5_PnL.png?raw=True" width="50%" height="50%"> </div>
+<div align=center><img src = "https://raw.githubusercontent.com/yooonyy/IMC_prosperity2/master/img/R5_PnL.png?raw=True" width="50%" height="50%"> </div>
 
 ---
 
