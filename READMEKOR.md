@@ -1,5 +1,5 @@
 # IMC-Prosperity-2024, Y-FoRM
-[ENG. ver link]()
+[ENG. ver link](README.md)
 
 ## IMC Prosperity란?
 - IMC Prosperity는 IMC Trading에서 주최하는 17일간의 알고리즘 및 메뉴얼 트레이딩 대회입니다.
