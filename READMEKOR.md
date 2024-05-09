@@ -169,9 +169,7 @@
 **메뉴얼 트레이딩 문제**  
 5라운드는 뉴스 트레이딩에 관한 것이었습니다. 북부 군도에서 가장 신뢰할 수 있는 뉴스 소스 "Iceberg"(Bloomberg가 아님)를 기반으로, 저희는 총 포지션 한도 100%로 매수와 매도 포지션을 배분해야 했습니다. 저희는 모든 제품에 대해 포지션을 취함으로써 몇몇 잘못된 답변의 영향을 줄이려고 했습니다. 저희는 5개의 정답과 4개의 오답을 얻었지만, 올바른 답변 하나의 이익이 잘못된 답변들의 손실을 모두 상쇄할 수 있었습니다.
 
-<div align=center><img src = "
-
-https://raw.githubusercontent.com/jimmylim0823/IMC-Prosperity-2/master/img/R5_PnL.png?raw=True" width="50%" height="50%"> </div>
+<div align=center><img src = "https://raw.githubusercontent.com/jimmylim0823/IMC-Prosperity-2/master/img/R5_PnL.png?raw=True" width="50%" height="50%"> </div>
 
 ---
 
